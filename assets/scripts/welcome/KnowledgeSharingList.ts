@@ -18,6 +18,11 @@ const listInfo = [
         src_short: "rnz.co.nz",
         content: "In 2018 the World Bank ranked New Zealand as the 10th most wasteful country in the world per capita with Kiwis producing 3.6kg of rubbish a day.",
       },
+      {
+        src: "google.com",
+        src_short: "google.com",
+        content: "Everybody can do a better job to reduce the waste.",
+      },
   ];
 
 export default listInfo

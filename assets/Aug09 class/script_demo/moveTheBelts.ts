@@ -3,8 +3,8 @@ import { _decorator, Component, Node } from 'cc';
 const { ccclass, property } = _decorator;
 
  
-@ccclass('BeltMove')
-export class BeltMove extends Component {
+@ccclass('BeltMoveDemo')
+export class BeltMoveDemo extends Component {
  
     @property(Node)
     belt_1: Node = null

@@ -2,7 +2,7 @@
   "ver": "1.0.22",
   "importer": "image",
   "imported": true,
-  "uuid": "7c0a0a0d-a732-467a-afa5-e2fbe5fd06b6",
+  "uuid": "c12e053c-0d16-4659-a2b2-be81bf427ef7",
   "files": [
     ".png",
     ".json"
@@ -10,14 +10,14 @@
   "subMetas": {
     "6c48a": {
       "importer": "texture",
-      "uuid": "7c0a0a0d-a732-467a-afa5-e2fbe5fd06b6@6c48a",
-      "displayName": "plastic_straws",
+      "uuid": "c12e053c-0d16-4659-a2b2-be81bf427ef7@6c48a",
+      "displayName": "toy",
       "id": "6c48a",
       "name": "texture",
       "userData": {
         "wrapModeS": "clamp-to-edge",
         "wrapModeT": "clamp-to-edge",
-        "imageUuidOrDatabaseUri": "7c0a0a0d-a732-467a-afa5-e2fbe5fd06b6",
+        "imageUuidOrDatabaseUri": "c12e053c-0d16-4659-a2b2-be81bf427ef7",
         "minfilter": "linear",
         "magfilter": "linear",
         "mipfilter": "none",
@@ -33,8 +33,8 @@
     },
     "f9941": {
       "importer": "sprite-frame",
-      "uuid": "7c0a0a0d-a732-467a-afa5-e2fbe5fd06b6@f9941",
-      "displayName": "plastic_straws",
+      "uuid": "c12e053c-0d16-4659-a2b2-be81bf427ef7@f9941",
+      "displayName": "toy",
       "id": "f9941",
       "name": "spriteFrame",
       "userData": {
@@ -45,17 +45,17 @@
         "offsetY": 0,
         "trimX": 0,
         "trimY": 0,
-        "width": 546,
-        "height": 416,
-        "rawWidth": 546,
-        "rawHeight": 416,
+        "width": 67,
+        "height": 68,
+        "rawWidth": 67,
+        "rawHeight": 68,
         "borderTop": 0,
         "borderBottom": 0,
         "borderLeft": 0,
         "borderRight": 0,
         "packable": true,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "7c0a0a0d-a732-467a-afa5-e2fbe5fd06b6@6c48a",
+        "imageUuidOrDatabaseUri": "c12e053c-0d16-4659-a2b2-be81bf427ef7@6c48a",
         "atlasUuid": ""
       },
       "ver": "1.0.9",
@@ -69,6 +69,6 @@
   "userData": {
     "type": "sprite-frame",
     "hasAlpha": true,
-    "redirect": "7c0a0a0d-a732-467a-afa5-e2fbe5fd06b6@f9941"
+    "redirect": "c12e053c-0d16-4659-a2b2-be81bf427ef7@f9941"
   }
 }

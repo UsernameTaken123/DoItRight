@@ -4,5 +4,22 @@
       "fitWidth": false,
       "fitHeight": true
     }
+  },
+  "physics": {
+    "collisionGroups": [
+      {
+        "index": 11,
+        "name": "box_recycling"
+      },
+      {
+        "index": 12,
+        "name": "box_generalWaste"
+      }
+    ],
+    "collisionMatrix": {
+      "0": 6144,
+      "11": 1,
+      "12": 1
+    }
   }
 }

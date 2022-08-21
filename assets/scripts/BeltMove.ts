@@ -1,5 +1,6 @@
 
 import { _decorator, Component, Node } from 'cc';
+import { GameManager, beltMoveSpeedGlobal } from './GameManager';
 const { ccclass, property } = _decorator;
 
  
@@ -12,13 +13,17 @@ export class BeltMove extends Component {
     @property(Node)
     belt_2: Node = null
 
-    @property(Number)
-    speed: number = 10
+    // @property(Number)
+    // speed: number = 10
+    private _beltMoveSpeed = 10
 
     private _beltY = 0
     private _beltMovingRange = 960
 
     start () {
+        console.log('_beltMoveSpeed: '+ this._beltMoveSpeed)
+        console.log('beltMoveSpeedGlobal: '+ beltMoveSpeedGlobal)
+        this._beltMoveSpeed = beltMoveSpeedGlobal
         this._init()
     }
 
@@ -40,12 +45,12 @@ export class BeltMove extends Component {
     }
 
     _beltMove(deltaTime: number){
-        this.belt_1.setPosition(this.belt_1.position.x - this.speed * deltaTime, this._beltY, 0)
+        this.belt_1.setPosition(this.belt_1.position.x - this._beltMoveSpeed * deltaTime, this._beltY, 0)
         if (this.belt_1.position.x < -this._beltMovingRange){
             this.belt_1.setPosition(this._beltMovingRange, this._beltY, 0)
         }
 
-        this.belt_2.setPosition(this.belt_2.position.x - this.speed * deltaTime, this._beltY, 0)
+        this.belt_2.setPosition(this.belt_2.position.x - this._beltMoveSpeed * deltaTime, this._beltY, 0)
         if (this.belt_2.position.x < -this._beltMovingRange){
             this.belt_2.setPosition(this._beltMovingRange, this._beltY, 0)
         }
