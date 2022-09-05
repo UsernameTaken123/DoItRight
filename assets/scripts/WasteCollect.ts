@@ -1,6 +1,5 @@
  
 import { _decorator, Component, Node, Collider2D, Contact2DType, IPhysics2DContact, Sprite, Color, director, Label, find, AudioSource } from 'cc';
-import { AudioController } from './AudioController';
 import wasteItemsMap from './WasteList';
 import { Waste_Type_Enum } from './WasteList';
 const { ccclass, property } = _decorator;
