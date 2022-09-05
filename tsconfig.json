@@ -4,6 +4,7 @@
 
   /* Add your custom configuration here. */
   "compilerOptions": {
+    // "lib": ["es6", "es2017.string"],
     "strict": false
   }
 }

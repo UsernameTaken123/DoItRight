@@ -1,6 +1,7 @@
 
 import { _decorator, Component, Node, Prefab, instantiate, Sprite, resources, SpriteFrame, director } from 'cc';
 import { GameManager, beltMoveSpeedGlobal } from './GameManager';
+// import wasteItemsMap from './WasteList';
 
 const { ccclass, property } = _decorator;
 
@@ -49,8 +50,8 @@ export class WasteMove extends Component {
 
     loadSpriteFrames (err, theAssets){
         console.log("load all SpriteFrames from folder...")
-        console.log(theAssets)
         this._theSpriteFrameSet = theAssets
+        console.log(this._theSpriteFrameSet)
     }
 
     start () {
@@ -72,6 +73,7 @@ export class WasteMove extends Component {
             let _spriteIndex = Math.floor(Math.random() * this._theSpriteFrameSet.length)
             this._theSpriteFrame = this._theSpriteFrameSet[_spriteIndex]
         
+            // assign the SpriteFrame to the waste item
             newWasteItem.getComponent(Sprite).spriteFrame = this._theSpriteFrame
 
             newWasteItem.active = true
