@@ -1,5 +1,6 @@
  
 import { _decorator, Component, Node, Collider2D, Contact2DType, IPhysics2DContact, Sprite, Color, director, Label, find, AudioSource } from 'cc';
+import { AudioController } from './AudioController';
 import wasteItemsMap from './WasteList';
 import { Waste_Type_Enum } from './WasteList';
 const { ccclass, property } = _decorator;
@@ -70,15 +71,14 @@ export class WasteCollect extends Component {
  
        if (wastCollectionCorect == true){
            scoreChange = 50
-           find("Canvas/Audio").getComponent(AudioSource).play
+
+           // easy way to play a sound effect; more complex code & example pls reference https://docs.cocos.com/creator/3.4/manual/en/audio-system/audiosource.html
+           find("Canvas/Audio/AudioYes").getComponent(AudioSource).play()   
        }
        else if (wastCollectionCorect == false){
            scoreChange = -50
+           find("Canvas/Audio/AudioWrong").getComponent(AudioSource).play()
        }
-       // else{
-       //     find("Canvas/Audio/AudioWrong").getComponent(AudioSource).play
-       // }
- 
  
        // const animationComponent = this.node.getComponent(Animation);
        // animationComponent.play()
@@ -86,8 +86,7 @@ export class WasteCollect extends Component {
        // add score
        // practice string handling
        // another option but requires es2017: this.scoreBoard.getComponent(Label).string = "Score: " + (Number(this.scoreBoard.getComponent(Label).string.split("Score: ")[1]) + 50).toString().padStart(5, '0')
-    //    this.scoreBoard.getComponent(Label).string = "Score: " + ("00000" + (Number(this.scoreBoard.getComponent(Label).string.split("Score: ")[1]) + scoreChange)).slice(-5)      
-
+       // this.scoreBoard.getComponent(Label).string = "Score: " + ("00000" + (Number(this.scoreBoard.getComponent(Label).string.split("Score: ")[1]) + scoreChange)).slice(-5)      
        let score = Number(this.scoreBoard.getComponent(Label).string.split("Score: ")[1]) + scoreChange
        if (score <0 ){      // if the score becomes negative number, just keep the score as zero
         score = 0
