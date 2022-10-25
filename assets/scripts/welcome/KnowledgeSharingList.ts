@@ -23,6 +23,56 @@ const listInfo = [
         src_short: "google.com",
         content: "Everybody can do a better job to reduce the waste.",
       },
+      {
+        src: "google.com",
+        src_short: "google.com",
+        content: "Use a reusable bottle/cup for beverages on-the-go.",
+      },
+      {
+        src: "google.com",
+        src_short: "google.com",
+        content: "Use reusable grocery bags, and not just for groceries!",
+      },
+      {
+        src: "google.com",
+        src_short: "google.com",
+        content: "Purchase wisely and recycle - think about its impact on the planet.",
+      },
+      {
+        src: "google.com",
+        src_short: "google.com",
+        content: "Compost it if you can!",
+      },
+       {
+        src: "google.com",
+        src_short: "google.com",
+        content: "Avoid single-use food and drink containers and utensils.",
+      },
+       {
+        src: "google.com",
+        src_short: "google.com",
+        content: "Buy secondhand items and donate used goods, they give the item a second use before throwing it away.",
+      },
+       {
+        src: "google.com",
+        src_short: "google.com",
+        content: "Shop local farmers markets and buy in bulk to reduce packaging.",
+      },
+       {
+        src: "google.com",
+        src_short: "google.com",
+        content: "Curb your use of paper: mail, receipts, magazines, advertisements etc...",
+      },
+       {
+        src: "google.com",
+        src_short: "google.com",
+        content: "Buy recycled bags, They are made of recycled materials which gives them more usage life and most of them can be recycled/disposed in a good and friendly way to the planet.",
+      },
+       {
+        src: "google.com",
+        src_short: "google.com",
+        content: "Borrow, Rent, Share! Borrow your friend's tools, items, etc.. instead of buying a new one, these reduce the total waste produced by limiting the amounts of products existing.",
+      },
   ];
 
 export default listInfo
